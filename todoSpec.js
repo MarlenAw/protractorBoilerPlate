@@ -1,6 +1,6 @@
 describe('angularjs homepage todo list', function () {
     it('should add a todo', function () { //The describe and it syntax is from the Jasmine framework
-        browser.get('https://angularjs.org'); //browser is a global created by Protractor, which is used for browser-level commands such as navigation with browser.get
+        browser.get('https://angularjs.org'); //browser is a global created by Protractor, which is used for browser-level commands such as navigation with browser.getgit
 
         element(by.model('todoList.todoText')).sendKeys('write first protractor test');
         element(by.css('[value="add"]')).click();
